@@ -1,3 +1,5 @@
 # HotelAnnaInn
 Programa de control de inventario de HotelAnnaInn
-Realizado con el framework de Django y templates responsive 
+Se llevo el control de insumos, alimentos y blancos.
+y un registro de inicio de sesion. 
+Realizado con el framework de Django, html y css.
