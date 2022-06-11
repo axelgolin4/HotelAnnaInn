@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href= "{% static 'css/login.css' %}">
+    <link rel="stylesheet" href= "{% static 'css/tablet.css' %}" media="(min-width: 768px)">
+    <link rel="stylesheet" href= "{% static 'css/laptop.css' %}" media="(min-width:1024px">
+
+   
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        
+        <section class="login-container">
+            
+            <div class="login-container--logo">
+                <img src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.hotelannainn.com/wp-content/uploads/2019/05/logo-anna-in-blanco.png" alt="hotel logo">
+            </div>
+
+            <div class="login--title">
+                <h1>LOGIN</h1>
+            </div>
+            <div class="main-login--titles">
+                <h1>LOGIN</h1>
+                <p>Ingresar Usuario y Contraseña</p>
+            </div>
+            <div class="main-login--inputs">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <p> <a href=""> ¿Olvidaste tu contraseña?</a></p>
+            </div>
+            <div class="main-login--button">
+                <button type="submit">LOGIN</button>
+            </div>
+            <div class="main-login--footer">
+                <p><a href="">Registrate</a></p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

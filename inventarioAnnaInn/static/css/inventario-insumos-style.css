@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+header {
+  background-color: #fd7400;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+.navbar-inventario {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5px;
+}
+
+.nav-leftside figure img {
+  width: 150px;
+}
+
+.nav-middleside {
+  text-align: center;
+  margin-top: 30px;
+}
+.nav-middleside h1 {
+  color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+.nav-rightside {
+  justify-content: end;
+  display: flex;
+}
+.nav-rightside .nav-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.nav-rightside .nav-item-container li {
+  list-style: none;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon {
+  width: 35px;
+}
+
+main {
+  display: flex;
+}
+aside {
+  background-color: #fd7400;
+  width: 15%;
+  height: 85vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+aside a {
+  color: white;
+  text-decoration: none;
+  font-family: "Signika", sans-serif;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+
+  border-bottom: 1px solid white;
+  text-align: left;
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  padding: 20px;
+}
+
+.top-buttons {
+  /* width: 1000px; */
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: 1fr 1fr; */
+}
+.top-buttons button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.top-buttons button:first-child {
+  background-color: green;
+}
+
+.top-buttons button:last-child {
+  background-color: red;
+}
+
+.top-buttons a{
+    text-decoration: none;
+    color: white;
+}
+
+.search-input {
+    display: flex;
+    justify-content: center;
+    margin-top:50px ;
+}
+
+.search-input button {
+  background-color: #001a4d;
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.search-input input{
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    padding: 8px;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid grey;
+    width: 60%;
+    overflow: visible;
+}
+
+.inventario{
+    margin-top: 30px;
+    font-size: inherit;
+    font-family: inherit;
+    border-collapse: collapse;
+    border-spacing: 0 ;
+    width: 100%;
+}
+
+.inventario tbody{
+    display: table-row-group;
+        vertical-align: middle;
+        border-color: #feca00;
+        font-size: 1.2rem;
+    }
+    
+    .inventario tr:nth-child(odd){
+        background-color: #fff;
+    }
+    .inventario tr{
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .inventario th{
+        padding-top: 11px;
+        padding-bottom: 11px;
+        background-color: #030000;
+        color: white;
+        padding: 8px;
+        font-family:"Signika", sans-serif;
+    }
+    
+    .inventario tr td{
+        color: #030000;
+        font-size:1.3rem;
+        text-align: center;
+        font-family: inherit;
+        padding: 8px;
+    }
+
+    

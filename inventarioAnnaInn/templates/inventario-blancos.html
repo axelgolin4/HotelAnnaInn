@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "{% static 'css/inventario-insumos-style.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-inventario">
+            <div class="nav-leftside">
+                <figure>
+                    <img src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.hotelannainn.com/wp-content/uploads/2019/05/logo-anna-in-blanco.png"
+                        alt="logo" />
+                </figure>
+            </div>
+            <div class="nav-middleside">
+                <h1><b>INVENTARIO BLANCOS</b></h1>
+            </div>
+            <div class="nav-rightside">
+                <ul class="nav-item-container">
+                    <li>
+                        <a href="./main.html"><img src="./icons/1564508_home_main_room_estate_property_icon.svg"
+                                alt="home-icon" class="icon" /></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside class="inventario-aside">
+            <a href="./inventarios.html"><b>Inventarios</b></a>
+            <a href="./facturacion.html"><b>Facturacion</b></a>
+            <a href="./reservaciones.html"><b>Reservaciones</b></a>
+        </aside>
+        <section>
+            <!-- TOP BUTTONS -->
+            <div class="top-buttons">
+                <button type="button"> <a href="./registrar_entradac" target="_blank">Registrar Entrada</a></button>
+                <button type="submit"> <a href="./registrar_salidac" target="_blank"> Registrar Salida</a></button>
+            </div>
+            
+            <!-- SEARCH INPUT -->
+            <div class="search-input">
+                <input type="text" autocomplete="name" placeholder="Nombre Producto">
+                <button type="submit">Buscar</button>
+            </div>
+            <br>
+            <Center><h2>{{ title }}</h2></Center>
+            <!-- TABLE -->
+            <table id="inventario-insumos" class="inventario">
+                <tr>
+                    <th>ID</th>
+                    <th>Producto</th>
+                    <th>Proveedor</th>
+                    <th>Subcategoria</th>
+                    <th>Stock</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+
+                {% for p in object_list %}
+                <tr>
+                    <td>{{ p.id }}</td>
+                    <td>{{ p.producto }}</td>
+                    <td>{{ p.proveedor }}</td>
+                    <td>{{ p.subcategoria }}</td>
+                    <td>{{ p.stock }}</td>
+                    <td>{{ p.fecha }}</td> 
+                    <td>
+                        <a href="{% url 'inventario:blancos_update' p.id %}"> Editar </a>
+                        <a href="{% url 'inventario:blancos_delete' p.id %}"> Eliminar </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+            <!-- FIN TABLE -->
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

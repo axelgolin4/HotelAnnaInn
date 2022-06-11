@@ -1,0 +1,11 @@
+.login-container .main-login--inputs input {
+    width: 80%;
+    height: 35px;
+    padding: 8px;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #262626;
+    border: 1px solid white;
+    border-radius: 5px;
+  }

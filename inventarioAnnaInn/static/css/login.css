@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #f79400;
+    background: linear-gradient(
+      to right,
+      
+      rgb(248, 217, 15, 1),
+      rgb(254, 122, 21, 1)
+    );
+  }
+  
+  .login-image{
+      display: none;
+  }
+  
+  .login-container--logo{
+      display: none;
+  }
+  
+  .login--title{
+      display: none;
+  }
+  
+  .login-container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  
+    width: 70%;
+    height: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #262626;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+  
+  .main-login--titles {
+    margin-top: 10px;
+  }
+  
+  .main-login--titles h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 5.6rem;
+  }
+  
+  .main-login--titles p {
+    color: #919191;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  
+  .login-container .main-login--inputs {
+    margin-top: 40px;
+  }
+  
+  .login-container .main-login--inputs input {
+    width: 100%;
+    height: 35px;
+    padding: 8px;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #262626;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  .login-container .main-login--inputs p {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  
+  .main-login--inputs a {
+    text-decoration: none;
+    color: #919191;
+  }
+  
+  
+  .main-login--button button{
+      width: 110px;
+      height: 40px;
+      margin-top: 50px;
+      font-weight: bold;
+      color: white;
+      background-color: #262626;
+      border: 1px solid white;
+      border-radius: 5px;
+  }
+  
+  .main-login--footer p{
+      margin-top: 65px;
+      font-size: 1.4rem;
+      color: white;
+  }
+  
+  .main-login--footer a{
+      text-decoration: none;
+      font-weight: bold;
+      color: #939393;
+  }
